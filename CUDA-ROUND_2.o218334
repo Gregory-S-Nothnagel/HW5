@@ -1,0 +1,46 @@
+setting asax scratch directory
+
+============================================================
+=====         Summary of your GPU job                  =====
+============================================================
+  The script file is: CUDA.sh
+  The time limit is 1:00:00 HH:MM:SS.
+  The target directory is: /home/ualclsd0186/HW5
+  The working directory is:  /scratch-local/ualclsd0186.CUDA-ROUND_2.218334.asax-pbs1
+  The memory limit is: 1gb
+  The job will start running after: 202412022235.20
+  Job Name: CUDA-ROUND_2
+  Queue: -q classgpu
+  Constraints:
+  Using  1  cores on master node  asaxg002.asc.edu
+  Node list:  asaxg002.asc.edu
+  Cores:  1
+  Command typed:
+/scripts/run_gpu CUDA.sh
+  Queue submit command:
+qsub -q classgpu -j oe -N CUDA-ROUND_2 -a 202412022235.20 -r n -M gsnothnagel@crimson.ua.edu -l walltime=1:00:00 -l select=1:ngpus=1:ncpus=1:mpiprocs=1:mem=1000mb
+
+Mon Dec  2 22:35:33 2024
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.28.03              Driver Version: 560.28.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-40GB          On  |   00000000:C1:00.0 Off |                    0 |
+| N/A   26C    P0             49W /  400W |       1MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Final grid state written to /scratch/ualclsd0186/CUDA-5000.txt
+Time taken for 5000 iterations: 2079.068 ms
+Final grid state written to /scratch/ualclsd0186/CUDA-10000.txt
+Time taken for 5000 iterations: 8115.585 ms
