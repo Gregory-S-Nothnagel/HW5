@@ -33,12 +33,12 @@ last iteration: 5000, time: 149.188
 ```
 
 This is how this file can be read, based on the contents of OPENMP_MPI.sh:
-- **CPU (5000x5000)**: `283`
-- **CPU (10000x10000)**: `1169`
-- **OpenMP (5000x5000)**: `93`
-- **OpenMP (10000x10000)**: `59`
-- **MPI (5000x5000)**: `37.7754`
-- **MPI (10000x10000)**: `149.188`
+- **CPU (5000x5000)**: `283 sec`
+- **CPU (10000x10000)**: `1169 sec`
+- **OpenMP (5000x5000)**: `93 sec`
+- **OpenMP (10000x10000)**: `59 sec`
+- **MPI (5000x5000)**: `37.7754 sec`
+- **MPI (10000x10000)**: `149.188 sec`
 
 The numbers used in the report table are averages of the times from three separate output files, rounded to two decimal digits. The board sizes for the MPI jobs are not indicated in the output files but can be confirmed by checking the job submission script files.
 
