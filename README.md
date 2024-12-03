@@ -54,8 +54,8 @@ Time taken for 5000 iterations: 8155.537 ms
 ```
 
 This is how this file can be read, based on the contents of OPENMP_MPI.sh:
-- **CUDA (5000x5000)**: `2.101742`
-- **CUDA (10000x10000)**: `8.155537`
+- **CUDA (5000x5000)**: `2.101742 sec`
+- **CUDA (10000x10000)**: `8.155537 sec`
 
 The numbers used in the report table are averages of the times from three separate output files, rounded to two decimal digits.
 
