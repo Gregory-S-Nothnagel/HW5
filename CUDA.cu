@@ -14,12 +14,10 @@ To Compile CUDA.cu game of life program, run the following script:
 		module load cuda/11.7.0
 
 		nvcc CUDA.cu -o CUDA
-		./CUDA 5000 5000 /scratch/$USER/CUDA-5000.txt
-		./CUDA 10000 5000 /scratch/$USER/CUDA-10000.txt
 
-To Run, use the following command:
+To Run, use the following command (inside of a .sh file obviously) and run with run_gpu on class queue:
 
-        mpirun -n <NUM_PROCESSES> ./HW4-V1 <BOARD_SIZE> <MAX_ITERATIONS> <BOARD_OUTPUT_PATH>
+        ./CUDA <BOARD_SIZE> <MAX_ITERATIONS> <BOARD_OUTPUT_PATH>
 
 For more details, see "Compilation" section of README.md in the github repo
 
