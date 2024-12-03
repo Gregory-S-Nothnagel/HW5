@@ -21,7 +21,7 @@ To Run, use the following command (inside of a .sh file obviously) and run with 
 
 For more details, see "Compilation" section of README.md in the github repo
 
-* Then you can inspect the board output file to confirm that everything looks as expected
+* Then you can run the diff command on the output files to confirm functionality yourself
 
 */
 
